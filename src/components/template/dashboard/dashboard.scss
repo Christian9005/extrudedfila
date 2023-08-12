@@ -1,0 +1,45 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+  .dashboard-title{
+    font-size: 45px;
+    color: #001219;
+  }
+
+  .sliders-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    .slider-content {
+      position: relative;
+
+      .slider-title {
+        position: absolute;
+        top: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 27px;
+        font-weight: bold;
+
+        &.temperature {
+          color: #ae2012;
+        }
+        &.speed {
+          color: #001219;
+        }
+      }
+    }
+  }
+
+  .display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

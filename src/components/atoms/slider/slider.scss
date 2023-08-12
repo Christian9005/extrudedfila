@@ -1,0 +1,105 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  width: 80px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+
+  &.speed-variant {
+    background-color: #001219;
+
+    .slider-track {
+      width: 50%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(270deg);
+      margin: 0 auto;
+      position: relative;
+
+      .slider-input {
+        appearance: none;
+        width: 270px;
+        height: 5%;
+        background: #ffffff;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        position: absolute;
+
+        &::-webkit-slider-thumb {
+          appearance: none;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background: #0a9396;
+          cursor: pointer;
+        }
+
+        &::-moz-range-thumb {
+          appearance: none;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background: #0a9396;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &.temperature-variant {
+    background-color: #ae2012;
+
+    .slider-track {
+      width: 50%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(270deg);
+      margin: 0 auto;
+      position: relative;
+
+      .slider-input {
+        appearance: none;
+        width: 270px;
+        height: 5%;
+        background: #ffffff;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        position: absolute;
+
+        &::-webkit-slider-thumb {
+          appearance: none;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background: #ee9b00;
+          cursor: pointer;
+        }
+
+        &::-moz-range-thumb {
+          appearance: none;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background: #ee9b00;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .slider-value {
+    margin: auto;
+    font-size: 30px;
+  }
+}

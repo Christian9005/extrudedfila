@@ -26,6 +26,7 @@ const Dashboard = () => {
     return (
         <div className="dashboard-container">
             <h1 className="dashboard-title">Dashboard de Control</h1>
+            <h2>Elaborado por </h2>
             <div className="sliders-image-container">
                 <div className="slider-content">
                     <p className="slider-title speed">Velocidad</p>
@@ -40,7 +41,6 @@ const Dashboard = () => {
             <div className="display-container">
                 <Display temperature={temperature} collectedMeter={collectedMeter} objectId={1}/>
             </div>
-            <h2>Elaborado por </h2>
         </div>
     );
 };

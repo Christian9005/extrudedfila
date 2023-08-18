@@ -40,6 +40,7 @@ const Dashboard = () => {
             <div className="display-container">
                 <Display temperature={temperature} collectedMeter={collectedMeter} objectId={1}/>
             </div>
+            <h2>Elaborado por </h2>
         </div>
     );
 };

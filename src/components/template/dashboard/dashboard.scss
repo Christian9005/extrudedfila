@@ -3,11 +3,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 20px;
 
   .dashboard-title{
-    font-size: 45px;
+    margin-bottom: 5px;
+    font-size: 40px;
     color: #001219;
+  }
+
+  .title-designer {
+    margin-top: 2px;
+    margin-bottom: 50px;
+    color: #001219;
+    font-size: 27px;
   }
 
   .sliders-image-container {
@@ -18,6 +26,7 @@
 
     .slider-content {
       position: relative;
+      touch-action: manipulation;
 
       .slider-title {
         position: absolute;

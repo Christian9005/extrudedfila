@@ -37,10 +37,10 @@ const Dashboard = () => {
                     <Slider min={25} max={450} variant="temperature" objectId={1}/>
                 </div>
             </div>
-            <Image urlImage={logo}/>
             <div className="display-container">
                 <Display temperature={temperature} collectedMeter={collectedMeter} objectId={1}/>
             </div>
+            <Image urlImage={logo}/>
         </div>
     );
 };

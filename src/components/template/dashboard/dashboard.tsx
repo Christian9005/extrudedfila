@@ -26,7 +26,7 @@ const Dashboard = () => {
     return (
         <div className="dashboard-container">
             <h1 className="dashboard-title">Dashboard de Control</h1>
-            <h2 className="title-designer">Elaborado por Bryan Montoya</h2>
+            <h2 className="title-designer">Elaborado por Fernando Montoya</h2>
             <Image urlImage={logo}/>
             <div className="sliders-image-container">
                 <div className="slider-content">

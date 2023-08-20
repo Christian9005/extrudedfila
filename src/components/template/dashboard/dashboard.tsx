@@ -12,16 +12,28 @@ const Dashboard = () => {
     const [collectedMeter, setCollectedMeter] = useState(0);
 
     useEffect(() => {
-        axios.get(`https://apifilamentoextruido-production.up.railway.app/api/ExtrudedFilament/${objectId}`)
-            .then(response => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(`https://apifilamentoextruido-production.up.railway.app/api/ExtrudedFilament/${objectId}`);
                 const apiData = response.data;
                 setTemperature(apiData.extruderTemperature);
                 setCollectedMeter(apiData.collectMeters);
-            })
-            .catch(error => {
+            } catch (error) {
                 console.error('Error fetching data:', error);
-            });
+            }
+        };
+
+        fetchData(); // Fetch data immediately
+
+        const interval = setInterval(() => {
+            fetchData(); // Fetch data at regular intervals
+        }, 5000); // Update every 5 seconds
+
+        return () => {
+            clearInterval(interval); // Clean up interval on unmount
+        };
     }, [objectId]);
+
 
     return (
         <div className="dashboard-container">

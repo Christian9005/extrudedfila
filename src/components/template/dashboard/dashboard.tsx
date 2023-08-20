@@ -35,7 +35,7 @@ const Dashboard = () => {
                 </div>
                 <div className="slider-content">
                     <p className="slider-title temperature">Temperatura</p>
-                    <Slider min={25} max={450} variant="temperature" objectId={1}/>
+                    <Slider min={50} max={300} variant="temperature" objectId={1}/>
                 </div>
             </div>
             <div className="display-container">

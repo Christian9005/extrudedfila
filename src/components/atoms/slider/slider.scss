@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   color: #ffffff;
-  width: 80px;
+  height: 80px;
+  width: 400px;
   padding: 10px;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
@@ -12,26 +13,25 @@
     background-color: #001219;
 
     .slider-track {
-      width: 50%;
-      height: 300px;
+      width: 100%;
+      height: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      transform: rotate(270deg);
-      margin: 0 auto;
+      margin-left: 300px;
       position: relative;
 
       .slider-input {
-        touch-action: manipulation;
         appearance: none;
-        width: 270px;
-        height: 5%;
+        width: 80%;
+        height: 20px;
         background: #ffffff;
         outline: none;
         border: none;
         border-radius: 10px;
         cursor: pointer;
         position: absolute;
+        transform: translateX(-50%);
 
         &::-webkit-slider-thumb {
           appearance: none;
@@ -58,25 +58,25 @@
     background-color: #ae2012;
 
     .slider-track {
-      width: 50%;
-      height: 300px;
+      width: 100%;
+      height: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      transform: rotate(270deg);
-      margin: 0 auto;
+      margin-left: 300px;
       position: relative;
 
       .slider-input {
         appearance: none;
-        width: 270px;
-        height: 5%;
+        width: 80%;
+        height: 20px;
         background: #ffffff;
         outline: none;
         border: none;
         border-radius: 10px;
         cursor: pointer;
         position: absolute;
+        transform: translateX(-50%);
 
         &::-webkit-slider-thumb {
           appearance: none;

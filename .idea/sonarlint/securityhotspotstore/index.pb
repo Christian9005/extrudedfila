@@ -11,3 +11,5 @@ V
 &src/components/atoms/button/button.tsx,3\2\32a415900a536af92d046ac2abba899e4fec5ab6
 W
 'src/components/atoms/button/button.scss,a\0\a0ef75f0da2d3bd0052278931de2c38c4342fc12
+=
+src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4

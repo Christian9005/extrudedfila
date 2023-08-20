@@ -21,7 +21,7 @@ const Dashboard = () => {
             .catch(error => {
                 console.error('Error fetching data:', error);
             });
-    }, []);
+    }, [objectId]);
 
     return (
         <div className="dashboard-container">
